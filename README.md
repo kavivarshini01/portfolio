@@ -12,7 +12,7 @@ This is a modern, responsive, and customizable **portfolio website** template bu
 ✅ Easy to Customize  
 
 ## 🚀 Live Demo
-[View Website](https://your-github-kavivarsini01.github.io/portfolio/)
+(https://your-github-kavivarsini01.github.io/portfolio/)
 
 ## 🛠️ Technologies Used
 - HTML, CSS, JavaScript
