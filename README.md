@@ -11,9 +11,6 @@ This is a modern, responsive, and customizable **portfolio website** template bu
 ✅ Contact Form Integration  
 ✅ Easy to Customize  
 
-## 🚀 Live Demo
-(https://your-github-kavivarsini01.github.io/portfolio/)
-
 ## 🛠️ Technologies Used
 - HTML, CSS, JavaScript
 - Bootstrap 5
