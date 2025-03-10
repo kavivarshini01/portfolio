@@ -17,4 +17,4 @@ This is a modern, responsive, and customizable **portfolio website** template bu
 - Font Awesome Icons
 
 ## 📩 Contact
-📧 Email: your-email@example.com
+📧 Email: kavivarshinid@gmail.com
