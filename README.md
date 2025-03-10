@@ -1,2 +1,2 @@
-# alex-smith
+# Kavi Varshini
 iPortfolio - Bootstrap Portfolio Websites Template
