@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #021024, #0a2348); /* Deep Blue Gradient */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container */
+        .project-container {
+            max-width: 850px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        .project-header h1 {
+            font-size: 38px;
+            font-weight: 700;
+            color: #fff;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .project-header h1::after {
+            content: "";
+            width: 70px;
+            height: 4px;
+            background: #007bff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Glassmorphism Card */
+        .project-card {
+            background: rgba(255, 255, 255, 0.1); /* Glass Effect */
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Icon */
+        .project-icon {
+            width: 90px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a8cff;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 17px;
+            padding: 6px 0;
+            opacity: 0.9;
+            transition: transform 0.2s ease;
+        }
+
+        ul li:hover {
+            transform: translateX(8px);
+            color: #4da6ff;
+        }
+
+        /* Gradient Button */
+        .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .back-button:hover {
+            background: linear-gradient(90deg, #0056b3, #003f7f);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Floating Glow Effect */
+        .floating-glow {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(0, 123, 255, 0.3);
+            border-radius: 50%;
+            filter: blur(50px);
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+            transition: 0.5s ease;
+        }
+
+        .project-card:hover .floating-glow {
+            width: 200px;
+            height: 200px;
+            top: -70px;
+            right: -70px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="project-container">
+        <div class="project-header">
+            <h1>Plant Disease Detection</h1>
+        </div>
+
+        <div class="project-card">
+            <p>
+                AI-powered system to detect plant diseases from leaf images using deep learning and computer vision.
+            </p>
+
+            <h3 class="section-title">Technology Stack</h3>
+            <ul>
+                <li>🌿 Deep Learning (CNN)</li>
+                <li>📷 Image Processing (OpenCV)</li>
+                <li>🖥️ Python & Flask</li>
+            </ul>
+
+            <h3 class="section-title">Key Features</h3>
+            <ul>
+                <li>✔️ High-accuracy disease classification</li>
+                <li>✔️ Early disease detection for crops</li>
+                <li>✔️ Real-time processing</li>
+            </ul>
+
+            <h3 class="section-title">Applications</h3>
+            <ul>
+                <li>🚜 Agricultural Monitoring</li>
+                <li>🌱 Smart Farming</li>
+                <li>📊 Precision Agriculture</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-button">← Back to Projects</a>
+    </section>
+</body>
+</html>
