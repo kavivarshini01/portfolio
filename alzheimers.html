@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alzheimer’s Disease Detection</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #021024, #0a2348);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .project-container {
+      max-width: 850px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .project-header h1 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .project-header h1::after {
+      content: "";
+      width: 70px;
+      height: 4px;
+      background: #007bff;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 150px;
+      height: 150px;
+      background: rgba(255, 255, 255, 0.2);
+      filter: blur(30px);
+      z-index: 0;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-card:hover::before {
+      width: 200px;
+      height: 200px;
+      top: -70px;
+      left: -70px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a8cff;
+      margin-top: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 17px;
+      padding: 6px 0;
+      opacity: 0.9;
+      transition: transform 0.2s ease;
+    }
+
+    ul li:hover {
+      transform: translateX(8px);
+      color: #4da6ff;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(90deg, #007bff, #0056b3);
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+
+    .back-button:hover {
+      background: linear-gradient(90deg, #0056b3, #003f7f);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .floating-glow {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: rgba(0, 123, 255, 0.3);
+      border-radius: 50%;
+      filter: blur(50px);
+      top: -50px;
+      right: -50px;
+      z-index: -1;
+      transition: 0.5s ease;
+    }
+
+    .project-card:hover .floating-glow {
+      width: 200px;
+      height: 200px;
+      top: -70px;
+      right: -70px;
+    }
+  </style>
+</head>
+<body>
+  <section class="project-container">
+    <div class="project-header">
+      <h1>Alzheimer’s Disease Detection</h1>
+    </div>
+
+    <div class="project-card">
+      <div class="floating-glow"></div>
+      <p>
+        AI-powered system to detect Alzheimer’s stages from MRI scans using deep learning and image analysis,
+        assisting in early diagnosis and intervention.
+      </p>
+
+      <h3 class="section-title">Technology Stack</h3>
+      <ul>
+        <li>🧠 Deep Learning (CNN + SVM)</li>
+        <li>🧪 MRI Image Processing</li>
+        <li>⚙️ PyTorch & Streamlit</li>
+      </ul>
+
+      <h3 class="section-title">Key Features</h3>
+      <ul>
+        <li>✔️ 4-class classification (Mild, Very Mild, Moderate, Demented)</li>
+        <li>✔️ Grad-CAM heatmaps for explainability</li>
+        <li>✔️ Real-time model retraining and confidence scoring</li>
+      </ul>
+
+      <h3 class="section-title">Applications</h3>
+      <ul>
+        <li>🏥 Early Alzheimer’s diagnosis</li>
+        <li>📈 Clinical decision support</li>
+        <li>🧬 AI-assisted healthcare innovation</li>
+      </ul>
+    </div>
+
+    <a href="index.html#projects"class="back-button">← Back to Projects</a>
+  </section>
+</body>
+</html>
